@@ -1,0 +1,27 @@
+#!/bin/bash
+#PBS -N dsa5208_atlas_check
+#PBS -q parallel
+#PBS -l select=1:ncpus=12:mpiprocs=1:ompthreads=12:mem=4gb
+#PBS -l walltime=00:10:00
+#PBS -j oe
+
+set -euo pipefail
+cd "$PBS_O_WORKDIR"
+
+echo "host=$(hostname)"
+echo "job_id=$PBS_JOBID"
+echo "working_directory=$PWD"
+command -v g++
+g++ --version | head -n 1
+
+g++ -O3 -std=c++11 -fopenmp jacobi.cpp -o jacobi
+
+export OMP_NUM_THREADS=12
+export OMP_DYNAMIC=FALSE
+export OMP_PROC_BIND=TRUE
+export OMP_PLACES=cores
+
+./jacobi --nx 64 --ny 64 --steps 20 --threads 12 --validate
+./jacobi --nx 5 --ny 5 --steps 1 --mode serial
+./jacobi --nx 5 --ny 5 --steps 1 --mode omp --threads 12
+echo "validation_passed"

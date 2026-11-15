@@ -1,0 +1,28 @@
+#!/bin/bash
+#PBS -N dsa5208_mpi_check
+#PBS -q parallel
+#PBS -l select=1:ncpus=12:mpiprocs=4:ompthreads=3:mem=4gb
+#PBS -l walltime=00:10:00
+#PBS -j oe
+
+set -euo pipefail
+cd "$PBS_O_WORKDIR"
+source /etc/profile.d/rec_modules.sh
+module load openmpi/2.1.1
+export OMPI_MCA_pml=ob1
+export OMPI_MCA_btl=self,vader
+echo "host=$(hostname)"
+echo "job_id=$PBS_JOBID"
+command -v mpicxx
+command -v mpirun
+mpicxx --version | head -n 1
+mpicxx -O3 -std=c++11 -fopenmp jacobi_mpi.cpp -o jacobi_mpi
+
+export OMP_DYNAMIC=FALSE
+export OMP_PROC_BIND=TRUE
+export OMP_PLACES=cores
+
+mpirun -np 4 ./jacobi_mpi --mode mpi --nx 64 --ny 64 --steps 20 --validate
+mpirun -np 4 ./jacobi_mpi --mode hybrid --nx 64 --ny 64 --steps 20 --threads 3 --validate
+mpirun --bind-to none -np 2 ./jacobi_mpi --mode mpi --nx 1024 --ny 1024 --steps 500
+echo "mpi_validation_passed"

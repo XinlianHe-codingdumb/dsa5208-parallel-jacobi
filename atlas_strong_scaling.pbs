@@ -1,0 +1,39 @@
+#!/bin/bash
+#PBS -N dsa5208_strong
+#PBS -q parallel
+#PBS -l select=1:ncpus=12:mpiprocs=12:mem=4gb
+#PBS -l walltime=01:00:00
+#PBS -j oe
+
+set -euo pipefail
+cd "$PBS_O_WORKDIR"
+source /etc/profile.d/rec_modules.sh
+module load openmpi/2.1.1
+
+g++ -O3 -std=c++11 -fopenmp jacobi.cpp -o jacobi
+mpicxx -O3 -std=c++11 -fopenmp jacobi_mpi.cpp -o jacobi_mpi
+
+export OMP_DYNAMIC=FALSE
+export OMP_PROC_BIND=FALSE
+export OMP_PLACES=cores
+export OMPI_MCA_pml=ob1
+export OMPI_MCA_btl=self,vader
+
+echo "experiment=strong_scaling host=$(hostname) job=$PBS_JOBID"
+echo "grid=2048x2048 steps=1000 repetitions=3"
+for repeat in 1 2 3; do
+    echo "repeat=$repeat"
+    ./jacobi --mode serial --nx 2048 --ny 2048 --steps 1000
+    for threads in 1 2 4 6 12; do
+        ./jacobi --mode omp --nx 2048 --ny 2048 --steps 1000 --threads "$threads"
+    done
+    for ranks in 1 2 4 6 12; do
+        mpirun --bind-to none -np "$ranks" ./jacobi_mpi --mode mpi --nx 2048 --ny 2048 --steps 1000
+    done
+    for config in 2:6 4:3 6:2; do
+        ranks=${config%:*}
+        threads=${config#*:}
+        mpirun --bind-to none -np "$ranks" ./jacobi_mpi --mode hybrid --nx 2048 --ny 2048 --steps 1000 --threads "$threads"
+    done
+done
+echo "strong_scaling_complete"

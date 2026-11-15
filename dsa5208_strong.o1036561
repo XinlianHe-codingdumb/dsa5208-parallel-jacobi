@@ -1,0 +1,239 @@
+experiment=strong_scaling host=cnode-33-43-26 job=1036561.venus01
+grid=2048x2048 steps=1000 repetitions=3
+repeat=1
+mode,nx,ny,steps,threads,seconds,checksum
+serial,2048,2048,1000,1,3.300132617,167280.99999995597
+mode,nx,ny,steps,threads,seconds,checksum
+omp,2048,2048,1000,1,3.2684955840000001,167280.99999995597
+mode,nx,ny,steps,threads,seconds,checksum
+omp,2048,2048,1000,2,1.540331737,167280.99999995597
+mode,nx,ny,steps,threads,seconds,checksum
+omp,2048,2048,1000,4,0.866374694,167280.99999995597
+mode,nx,ny,steps,threads,seconds,checksum
+omp,2048,2048,1000,6,0.74136762,167280.99999995597
+mode,nx,ny,steps,threads,seconds,checksum
+omp,2048,2048,1000,12,0.76087018399999995,167280.99999995597
+[cnode-33-43-26:18722] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18733] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+mpi,2048,2048,1000,1,1,3.0682906992733479,167280.99999995597,0.00033093057572841644,3.0587406381964684
+[cnode-33-43-26:18744] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18751] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18752] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+mpi,2048,2048,1000,2,1,1.6000072248280048,167280.99999998129,0.031595278531312943,1.5767521914094687
+[cnode-33-43-26:18763] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18773] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18774] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18775] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18776] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+mpi,2048,2048,1000,4,1,1.0165478233247995,167280.99999998158,0.103747783228755,0.9919347669929266
+[cnode-33-43-26:18786] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18792] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18794] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18793] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18795] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18796] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18797] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+mpi,2048,2048,1000,6,1,1.200085386633873,167280.99999999351,0.12058105506002903,1.1593808494508266
+[cnode-33-43-26:18812] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18818] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18820] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18819] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18821] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18822] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18823] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18825] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18824] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18826] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18827] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18828] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18829] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+mpi,2048,2048,1000,12,1,0.85619431547820568,167280.99999999837,0.58540008030831814,0.51492976769804955
+[cnode-33-43-26:18855] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18861] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18862] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+hybrid,2048,2048,1000,2,6,0.56910486333072186,167280.99999998129,0.058578193187713623,0.5517403818666935
+[cnode-33-43-26:18878] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18888] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18889] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18891] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18890] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+hybrid,2048,2048,1000,4,3,0.56002171710133553,167280.99999998158,0.12223689630627632,0.53462916985154152
+[cnode-33-43-26:18913] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18918] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18919] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18921] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18922] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18923] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:18920] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+hybrid,2048,2048,1000,6,2,0.5658979844301939,167280.99999999351,0.26947364769876003,0.52901925519108772
+repeat=2
+mode,nx,ny,steps,threads,seconds,checksum
+serial,2048,2048,1000,1,3.1983091379999999,167280.99999995597
+mode,nx,ny,steps,threads,seconds,checksum
+omp,2048,2048,1000,1,3.2072531199999998,167280.99999995597
+mode,nx,ny,steps,threads,seconds,checksum
+omp,2048,2048,1000,2,1.5704025740000001,167280.99999995597
+mode,nx,ny,steps,threads,seconds,checksum
+omp,2048,2048,1000,4,0.88432127900000002,167280.99999995597
+mode,nx,ny,steps,threads,seconds,checksum
+omp,2048,2048,1000,6,0.68980735599999998,167280.99999995597
+mode,nx,ny,steps,threads,seconds,checksum
+omp,2048,2048,1000,12,0.57927442600000001,167280.99999995597
+[cnode-33-43-26:18990] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19001] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+mpi,2048,2048,1000,1,1,3.3444486726075411,167280.99999995597,0.00039663724601268768,3.3360379785299301
+[cnode-33-43-26:19029] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19063] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19064] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+mpi,2048,2048,1000,2,1,1.6004969943314791,167280.99999998129,0.032727327197790146,1.58179672062397
+[cnode-33-43-26:19086] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19092] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19094] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19093] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19095] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+mpi,2048,2048,1000,4,1,1.1040084566920996,167280.99999998158,0.074197797104716301,1.0798391066491604
+[cnode-33-43-26:19105] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19115] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19116] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19117] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19118] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19119] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19120] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+mpi,2048,2048,1000,6,1,0.60613210499286652,167280.99999999351,0.13849199377000332,0.58199018239974976
+[cnode-33-43-26:19134] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19147] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19145] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19146] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19148] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19150] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19149] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19151] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19153] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19152] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19154] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19155] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19156] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+mpi,2048,2048,1000,12,1,0.53205090947449207,167280.99999999837,0.28184350952506065,0.49579020030796528
+[cnode-33-43-26:19181] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19187] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19188] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+hybrid,2048,2048,1000,2,6,0.61665444634854794,167280.99999998129,0.060438813641667366,0.56880843453109264
+[cnode-33-43-26:19205] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19210] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19211] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19212] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19213] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+hybrid,2048,2048,1000,4,3,0.51940730586647987,167280.99999998158,0.047995828092098236,0.4868024867027998
+[cnode-33-43-26:19231] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19259] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19260] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19262] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19261] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19263] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19264] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+hybrid,2048,2048,1000,6,2,0.56318061612546444,167280.99999999351,0.059664160013198853,0.52141408063471317
+repeat=3
+mode,nx,ny,steps,threads,seconds,checksum
+serial,2048,2048,1000,1,3.190046621,167280.99999995597
+mode,nx,ny,steps,threads,seconds,checksum
+omp,2048,2048,1000,1,3.0730497090000002,167280.99999995597
+mode,nx,ny,steps,threads,seconds,checksum
+omp,2048,2048,1000,2,1.5615680240000001,167280.99999995597
+mode,nx,ny,steps,threads,seconds,checksum
+omp,2048,2048,1000,4,0.86050105600000004,167280.99999995597
+mode,nx,ny,steps,threads,seconds,checksum
+omp,2048,2048,1000,6,0.59936986699999995,167280.99999995597
+mode,nx,ny,steps,threads,seconds,checksum
+omp,2048,2048,1000,12,0.57633277199999999,167280.99999995597
+[cnode-33-43-26:19328] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19334] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+mpi,2048,2048,1000,1,1,3.0966342873871326,167280.99999995597,0.00065679475665092468,3.0864881779998541
+[cnode-33-43-26:19361] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19368] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19367] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+mpi,2048,2048,1000,2,1,1.489973921328783,167280.99999998129,0.072433017194271088,1.4701552446931601
+[cnode-33-43-26:19374] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19385] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19387] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19384] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19388] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+mpi,2048,2048,1000,4,1,0.89452926255762577,167280.99999998158,0.19642337411642075,0.86974675953388214
+[cnode-33-43-26:19398] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19407] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19408] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19409] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19410] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19411] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19412] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+mpi,2048,2048,1000,6,1,0.93242906965315342,167280.99999999351,0.46333686448633671,0.90142646990716457
+[cnode-33-43-26:19437] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19444] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19445] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19446] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19447] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19450] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19449] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19451] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19452] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19448] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19455] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19453] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19454] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+mpi,2048,2048,1000,12,1,0.524997403845191,167280.99999999837,0.26713244244456291,0.49564808793365955
+[cnode-33-43-26:19480] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19490] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19491] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+hybrid,2048,2048,1000,2,6,2.6774550471454859,167280.99999998129,1.0890870895236731,1.5982197467237711
+[cnode-33-43-26:19513] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19520] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19519] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19522] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19521] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+hybrid,2048,2048,1000,4,3,2.0639610588550568,167280.99999998158,1.5639418717473745,1.1886653136461973
+[cnode-33-43-26:19546] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19557] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19558] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19556] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19559] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19561] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+[cnode-33-43-26:19562] mca_base_component_repository_open: unable to open mca_oob_ud: libosmcomp.so.3: cannot open shared object file: No such file or directory (ignored)
+mode,nx,ny,steps,ranks,threads,seconds,checksum,comm_seconds_max,compute_seconds_max
+hybrid,2048,2048,1000,6,2,0.5259887482970953,167280.99999999351,0.24804218858480453,0.500885970890522
+strong_scaling_complete
+      ======================================================================================
+     Resource Usage on 2026-11-08 18:19:32.880373:
+     JobId: 1036561.venus01  				 Project: _pbs_project_default 
+     Submission Host: atlas8-c01 
+     Exit Status: 0
+     NCPUs Requested: 12 				 NCPUs Used: 12
+     Memory Requested: 4gb 				 Memory Used: 115864kb 
+     Vmem Used: 2303816kb
+     CPU Time Used: 00:02:47 
+     Walltime requested: 01:00:00 			 Walltime Used: 00:02:09
+     Submit Time:  Sun Nov  8 18:17:22 2026 		 Start Time: Sun Nov  8 18:17:23 2026 
+     End Time: Sun Nov  8 18:19:32 2026 
+     Execution Nodes Used: (cnode-33-43-26:ncpus=12:mem=4194304kb)
+     ======================================================================================
